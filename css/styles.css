@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap");
+/*this the default style for page */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Inter", sans-serif;  
+}
+/*I chose the theme colors*/
+:root{
+    --main_color:#1B3A57;
+    --back_color: #E6F1F9;
+    --btn_color:#FF6F61 ;
+    --text_color:#A0AEBF ;
+    --footer_color: #1B3A57;
+
+}
+body{
+    background: var(--main_color);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    max-width: 1500px;
+}
+img{
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--text_color);
+    font-family: "DM",sans-serif;
+}
+span{
+    color: var(--btn_color);
+}
+p{
+    color: var(--text_color);
+    line-height: 1.7;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.btn{
+    background: var(--btn_color);
+    padding: 14px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: black;
+    transition: 0.3s;
+}
+.btn:hover{
+    scale: 1.1;
+}
+.btn_nobg{
+    color: aliceblue;
+    transition: 0.3s;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+.btn_nobg:hover{
+    scale: 1.1;
+    color: var(--btn_color);
+}
+/*header styles*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+}
+header nav{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+header nav .logo img{
+    width: 200px;
+}
+header nav .links{
+    display: flex;
+    gap: 40px;
+}
+
+header nav .links a{
+    color: var(--text_color);
+    transition: 0.3s;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+header nav .links a:hover{
+    color: #FF6F61;
+    scale: 1.2;
+}
+header nav .icons{
+    display: flex;
+    gap: 20px;
+}
+header nav .icons a{
+    transition: 0.3s;
+    gap: 30px;
+    font-size: 22px;
+    color: var(--btn_color);
+}
+header nav .icons a:hover{
+    scale: 1.1;
+}
+/*here I make up the home page the into and photo and hire me button*/
+.issam {
+    padding-top: 100px;
+}
+.issam .container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.issam .div_text{
+    width: 50%;
+}
+.issam .btn{
+    font-size: 20px;
+    padding: 18px;
+}
+.issam .div_text h4{
+color: var(--text_color);
+font-size: 35px;
+}
+.issam .div_text h1{
+    font-size: 50px;
+}
+.issam .div_text h2{
+    font-size: 60px;
+    font-weight: normal;
+    line-height: 0.9;
+}
+.issam .div_text p{
+    margin: 20px 0;
+    font-size: 18px;
+    width: 80%;
+}
+.issam .div_img{
+    width: 40%;
+    position: relative;
+    border-radius: 0 0 600px 600px;
+    overflow: hidden;
+}
+.issam .div_img .person{
+    
+}
+.issam .div_img .bg_img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+/* the end of thid part :here I make up the home page the into and photo and hire me button*/
+
