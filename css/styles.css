@@ -36,6 +36,9 @@ h1,h2,h3,h4,h5,h6{
 span{
     color: var(--btn_color);
 }
+section{
+    padding: 80px 0;
+}
 p{
     color: var(--text_color);
     line-height: 1.7;
@@ -74,6 +77,12 @@ header{
     left: 0;
     right: 0;
     height: 100px;
+    transition: 0.5s;
+}
+header.active{
+    background: black;
+    border-bottom: 1px solid --footer_color;
+    z-index: 999;
 }
 header nav{
     color: black;
@@ -116,6 +125,10 @@ header nav .icons a:hover{
 /*here I make up the home page the into and photo and hire me button*/
 .issam {
     padding-top: 100px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .issam .container{
    display: flex;
@@ -163,3 +176,57 @@ font-size: 35px;
 }
 /* the end of thid part :here I make up the home page the into and photo and hire me button*/
 
+/* start about design*/
+.about .container{
+    background: black;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 50px;
+}
+.about .div_text{
+    width: 50%;
+
+}
+.about .div_text h5{
+    color: var(--text_color);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.about .div_text h2{
+    font-size: 45px;
+    margin-bottom: 25px 0 5px;
+}
+
+.about .div_text h4{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.about .div_text p{
+    line-height: 1.8;
+}
+.about .div_text .btn{
+ color: black;
+}
+.about .div_text .btn:hover{
+ 
+    scale: 1.3;
+   }
+
+.about .div_text ul  {
+    display: flex;
+    color: var(--back_color);
+    margin: 30px 0 20px;
+    flex-wrap: wrap;
+    }
+    .about .div_text ul li{
+        width: 45%;
+        font-weight: bold;
+        margin-bottom: 30px;
+        display: flex;
+        gap: 10px;
+    }
+    .about .div_img{
+        width: 35%;
+    }
