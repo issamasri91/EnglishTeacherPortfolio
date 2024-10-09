@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- title of website-->
+    <style> img{max-width: 100%; height: auto;}</style>
+    <!-- title of website-->
     <title>Portfolio | Issam Elasri</title>
      <!-- icon in the top of tab browser-->
     <link rel="icon" href="img/logo_icon.png">
@@ -18,18 +20,26 @@
    
     <!--the nav bar and its elements-->
     <nav class="container">
-        <a href="#" class="=logo"><img src="img/logo.png"  alt=""></a>
-        <div class="links">
-           <a href="#">Home</a> 
+        <a href="#" class="logo"><img src="img/logo.png"  alt=""></a>
+        <!--tabs in nav bar-->
+        <div class="links" id="links_nav">
+            <span class="close_menu" onclick="open_close_menu()"><i class="fa-solid fa-x"></i></span>
+        
+            <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+           <a href="#" class="active">Home</a> 
            <a href="#">about</a>
            <a href="#">services</a>
            <a href="#">Media</a>
            <a href="#">Contact</a>
         </div>
+
         <div class="icons">
             <a href="#"><i class="fa-brands fa-tiktok"></i></a> 
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <span class="icon_menu" onclick="open_close_menu()">
+                <i class="fa-solid fa-bars"></i>
+            </span>
         </div>
     </nav>
  </header>
@@ -199,6 +209,7 @@ language goals.
         </form>
     </di>
  </section>
+ <!--end contact section-->
     <script src="js/main.js"></script>
 </body>
 </html>

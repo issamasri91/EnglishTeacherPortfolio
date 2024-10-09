@@ -8,3 +8,9 @@ window.onscroll = function(){
             header.classList.remove("active")
     }
 }
+
+//close th nav links in for responsive screen
+let nav_links = document.getElementById("links_nav")
+function open_close_menu(){
+    nav_links.classList.toggle("active")
+}

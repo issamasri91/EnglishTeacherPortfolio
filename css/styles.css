@@ -26,9 +26,7 @@ body{
     margin: auto;
     max-width: 1500px;
 }
-img{
-    width: 100%;
-}
+
 h1,h2,h3,h4,h5,h6{
     color: var(--text_color);
     font-family: "DM",sans-serif;
@@ -84,13 +82,14 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 70px;
     transition: 0.5s;
 }
 header.active{
     background: black;
-    border-bottom: 1px solid --footer_color;
+    border-bottom: 1px solid var(--btn_color);
     z-index: 999;
+
 }
 header nav{
     color: black;
@@ -99,9 +98,7 @@ header nav{
     align-items: center;
     height: 100%;
 }
-header nav .logo img{
-    width: 200px;
-}
+
 header nav .links{
     display: flex;
     gap: 40px;
@@ -132,7 +129,7 @@ header nav .icons a:hover{
 }
 /*here I make up the home page the into and photo and hire me button*/
 .issam {
-    padding-top: 100px;
+    padding-top: 50px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -145,10 +142,13 @@ header nav .icons a:hover{
 }
 .issam .div_text{
     width: 50%;
+    margin-left: 50px;
 }
 .issam .btn{
     font-size: 20px;
-    padding: 18px;
+    padding: 18px 30px;
+}
+.issam .btns{
 }
 .issam .div_text h4{
 color: var(--text_color);
@@ -168,7 +168,7 @@ font-size: 35px;
     width: 80%;
 }
 .issam .div_img{
-    width: 40%;
+    width: 35%;
     position: relative;
     border-radius: 0 0 600px 600px;
     overflow: hidden;
@@ -192,6 +192,7 @@ font-size: 35px;
     align-items: center;
     border-radius: 5px;
     padding: 50px;
+    margin-top: 100px;
 }
 .about .div_text{
     width: 50%;
@@ -236,7 +237,9 @@ font-size: 35px;
         gap: 10px;
     }
     .about .div_img{
-        width: 35%;
+        max-width: 100%;
+    height: auto;
+        margin-right: 20px;
     }
                 /*end about section*/
 
@@ -337,6 +340,10 @@ font-size: 35px;
         flex-direction: row-reverse;
     }
     /* end of project section*/
+
+
+
+
     /*start contact side*/
     .contact .top_media{
         margin-bottom: 100px;
@@ -412,3 +419,198 @@ font-size: 35px;
         text-align: center;
         border-radius: 5px;
     }
+    /*end contact section*/
+
+    /*start responsive editing*/
+    .close_menu
+        {
+        display: none;
+    }
+    .icon_menu{
+        display: none;
+    }
+    header .links .logo{
+        display: none;
+    }
+    /*for screens -1250px*/
+   @media (max-width:1250px) {
+    .container{
+        width: 90%;
+    }
+   }
+    /*for screens -1000px*/
+   @media (max-width:1000px) {
+    header nav .links{
+        flex-direction: column;
+        width: 400px;
+        left: -400px;
+        position: fixed;
+        top: 0;
+        background: black;
+        padding: 50px 0;
+        height: 100%;
+        border-right:1px solid var(--text_color);
+        text-align: center;
+        transition: 0.3s ease-in-out;
+    }
+    header nav .links.active{
+        left: 0;
+        z-index: 999;
+        
+    }
+    .close_menu{
+        display: block;
+        font-size: 28px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    .icon_menu{
+        display: block;
+        font-size: 28px;
+    }
+    header .links .logo{
+        display: block;
+    
+    }
+    header .links .logo{
+        display: block;
+    }
+    /*responsive home*/
+    .issam .div_text h4{
+        font-size: 25px;
+    }
+    .issam .div_text h2{
+        font-size: 50px;
+    }
+    .issam .div_text p{
+        font-size: 16px;
+        margin: 30px auto;
+        width: 60%;
+    }
+    .issam .btn{
+        font-size: 16px;
+        padding: 15px 30px;
+        
+    }
+    .issam{
+        height: auto;
+    }
+    .issam .btns{
+        justify-content: center;
+    }
+    .issam .div_text{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .issam .container{
+        width: 90%;
+        flex-direction: column;
+    }
+    .issam .div_text{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .issam .div_img{
+        width: 100%;
+    
+    }
+    .issam .div_img .person{
+        margin-left: 50px;
+    }
+    .about .container{
+        flex-direction: column;
+    }
+    .about .div_text{
+        width: 100%;
+    }
+    .about .div_img{
+        width: 80%;
+        padding: 10px 10px;
+        margin: 30px 10px;
+    }
+    .about .div_text .btn{
+        margin-left: 150px;
+    }
+    .media .boxes .box{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .projects .project_box .text{
+        margin-left: 50px;
+    }
+    .projects .project_box .text p{
+        margin: 0 0 0 0;
+    }
+    .projects .project_box .text h4{
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    .projects .project_box .text h3{
+        font-size: 25px;
+    }
+    .contact .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact .social_contact{
+        width: 100%;
+        text-align: center;
+    }
+    .contact .social_contact .links{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+       
+    }
+    .contact .social_contact .links a{
+        align-content: center;
+        align-items: center;
+        font-size: 16px;
+        margin: 0 0 0 0;
+    }
+    .contact .social_contact .links a i{
+        font-size: 16px;
+       align-content: center;
+    }
+    .about .div_img{
+        scale: 0.8;
+        display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; 
+        
+    }
+    .about .container{
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+   }
+
+
+ /*for screens -500px*/
+
+ @media (max-width:500px) {
+    header nav .icons a{
+        font-size: 20px;
+    }
+    header nav .icons{
+        gap: 15px;
+        align-items: center;
+    }
+    header .container .logo_re img{
+        width: 150px;
+        background-color: #4f0fae;
+    }
+header nav .logo img{
+    width: 150px;
+}
+header nav .links{
+    width: 100%;
+    left: -100%;
+}
+   .icon_menu{
+    margin-left: 10px;
+   }
+ }
