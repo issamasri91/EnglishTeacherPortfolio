@@ -1,0 +1,42 @@
+{% load static %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block content %}
+ <!-- Contact Section -->
+   
+ <section class="contact text-center" id="contact">
+    <div class="container">
+      <h2>Contact <span class="highlight">Me</span></h2>
+      <form  method="POST" id="form">
+        <input type="hidden" name="access_key" value="d4dc6320-f218-4885-8c2d-97d54a097c4b">
+        <div class="row">
+          <div class="col-md-6">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required class="form-control" placeholder="Full name">
+          </div>
+          <div class="col-md-6">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required class="form-control" placeholder="Email">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required class="form-control" placeholder="Phone">
+          </div>
+          <div class="col-md-6">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required class="form-control" placeholder="Subject">
+          </div>
+        </div>
+        <label for="message">Message:</label>
+        <textarea class="form-control mt-3" id="message" name="message" required placeholder="Your message"></textarea>
+        <button type="submit" id="sub" class="btn btn-primary mt-3">Submit</button>
+        <div id="result"></div>
+      </form>
+    </div>
+  </section>
+{% endblock %}

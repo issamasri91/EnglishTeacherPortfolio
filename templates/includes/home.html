@@ -1,0 +1,32 @@
+
+{% load static%}
+{% block title %}
+
+{% endblock %}
+
+{% block content %}
+  <!-- Hero Section -->
+  <section class="hero text-center" id="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="text_hero">
+            <h1>Hello I'm <br><span class="highlight">Issam E.</span></h1>
+            <h4>English Teacher</h4>
+            <p>I can make your language learning experience enjoyable and fulfilling, no matter your level of experience or goal of fluency.</p>
+          </div>
+          <a href="{% static 'img/CV.pdf' %}" class="btn btn-primary">Download CV</a>
+          <div class="social-icons mt-3">
+            <a href="https://www.instagram.com/issam.elasri91/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@issamasri91" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://web.facebook.com/profile.php?id=100084811278427" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@issamelasri6739" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="{% static 'img/home image.png' %}" alt="Issam E." class="img-fluid rounded-circle">
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
