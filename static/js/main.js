@@ -61,3 +61,26 @@ form.addEventListener('submit', function(e) {
         });
 });
 
+
+//firebase
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBgLmnai5S8uyDEJ4MfZmTT3dScq5P6mQE",
+  authDomain: "portfolio-d1697.firebaseapp.com",
+  projectId: "portfolio-d1697",
+  storageBucket: "portfolio-d1697.appspot.com",
+  messagingSenderId: "858836293201",
+  appId: "1:858836293201:web:ea70a1cb88be8d8c1fca70",
+  measurementId: "G-DGM5S3DJ1X"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
