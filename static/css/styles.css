@@ -1,9 +1,19 @@
+
+/* Custom Color Palette */
+:root {
+  --baby-blue: #68bbe3;
+  --blue-grotto: #0e86d4;
+  --blue: #055c9d;
+  --navy-blue: #003060;
+}
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #02022d;
-    color: white;
+    background-color: var(--baby-blue);
+    color: var(--navy-blue);
   }
-  
+  h1 {
+    color: var(--blue-grotto);
+}
   nav .container-fluid{
    
    
@@ -30,6 +40,8 @@ body {
   }
   .hero .container .btn{
     font-size: 2rem;
+     background-color: var(--blue);
+    color: #ffffff; /* Set text color to white for contrast */
   }
   .hero .container .social-icons i{
     font-size: 1.7rem;
@@ -156,6 +168,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     justify-items: center;
+    
   }
   
   .project-card {
@@ -165,6 +178,7 @@ body {
     padding: 20px;
     max-width: 300px;
     transition: transform 0.3s ease;
+    
   }
   
   .project-card:hover {

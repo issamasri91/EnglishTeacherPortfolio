@@ -1,3 +1,4 @@
+
 {% load static %}
 
 {% block title %}
@@ -10,7 +11,8 @@
  <section class="contact text-center" id="contact">
     <div class="container">
       <h2>Contact <span class="highlight">Me</span></h2>
-      <form  method="POST" id="form">
+      <form method="POST" action="{% url 'contact' %}" id="form">  <!-- The action should point to your form view URL -->
+        {% csrf_token %}  <!-- This is necessary for form security in Django -->
         <input type="hidden" name="access_key" value="d4dc6320-f218-4885-8c2d-97d54a097c4b">
         <div class="row">
           <div class="col-md-6">
@@ -34,6 +36,8 @@
         </div>
         <label for="message">Message:</label>
         <textarea class="form-control mt-3" id="message" name="message" required placeholder="Your message"></textarea>
+       
+      
         <button type="submit" id="sub" class="btn btn-primary mt-3">Submit</button>
         <div id="result"></div>
       </form>
