@@ -18,4 +18,10 @@ var message = "Hello! I would like to get in touch with you."; // Optional pre-f
   window.open(whatsappURL, '_blank');
 }
 
+// clear form
 
+function clearForm(event) {
+  event.preventDefault(); // Prevent the default form submission behavior
+  const form = document.getElementById("form_submit");
+  form.reset(); // Reset all form fields
+}
