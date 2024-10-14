@@ -1,2 +1,3 @@
 # Ignore Django staticfiles directory
 staticfiles
+"staticfiles/" 
