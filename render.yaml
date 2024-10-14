@@ -1,14 +1,12 @@
 services:
   - type: web
-    name: my-django-app
+    name: portfolio
     env: python
-    buildCommand: 
-      - pip install -r requirements.txt
-      - python manage.py collectstatic --noinput  # Collect static files
-    startCommand: gunicorn myproject.wsgi
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py collectstatic --noinput  # Collect static files
+    startCommand: gunicorn myproject.wsgi --bind 0.0.0.0:8000 --log-file -
     staticPublishPath: staticfiles  # Path to collected static files
     envVars:
       - key: DJANGO_SECRET_KEY
-        value: YOUR_SECRET_KEY
-      - key: DATABASE_URL
-        value: YOUR_DATABASE_URL
+        value: django-insecure-^@po=@7@%hk&7mtm2o90cizi8t4nte=18$75+q2pmunh1$8%r&
