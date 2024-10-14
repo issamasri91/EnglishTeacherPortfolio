@@ -1,90 +1,84 @@
 
 /* Custom Color Palette */
-:root {
-  --backgroun-cream: #003366;
-  --title-redOrange:#dc4731;
-  --heaer-bruntOrange:#b8390e;
-  --accent--rose-red:#87CEEB;
-  --action-btn-icon-vorder:#FFD700;
-  --secondary-text-bg:#708090;
-  --white:#FFFFFF	;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  :root {
+    --primary-color: #2babe2; /* Turquoise */
+    --secondary-color: #04d4f0; /* Cyan */
+    --accent-color: #6af2f0; /* Blue Grotto */
+    --dark-color: #2596be; /* Dark Blue */
+    --black:#0000;
+    --texr:#21130d;
+    --text2:#eab676;
+    --bg:#ffffff;
+    font-family: 'Poppins';
+    --font-primary: 'Poppins';
+    --font-secondary: 'Poppins', sans-serif;
+  }
  
-}
+
 /* Body styles */
 body {
-  background-color: var(--white); /* White for background */
-  color: var(--secondary-text-bg); /* Slate Gray for text */
+  background-color: var(--bg); /* White for background */
+  color: var(--dark-colo); /* Slate Gray for text */
+  font-family: 'Poppins';
+  --font-primary: 'Poppins';
+  --font-secondary: 'Poppins', sans-serif;
 }
 
 /* Navigation Bar */
 .navbar {
-  background-color: var(--backgroun-cream); /* Navy Blue */
-  padding: 15px;
+  background-color: #333;
+  padding: 10px;
 }
 
 .navbar a {
-  color: var(--white); /* White for links */
+  color: var(--bg); /* White for links */
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 5px 5px;
 }
 
 .navbar a:hover {
   color: var(--action-btn-icon-vorder); /* Gold on hover */
 }
-
-/* Headers */
-h1, h2, h3 {
-  color: var(--backgroun-cream); /* Navy Blue for headers */
-}
-
-/* Buttons */
-.button {
-  background-color: var(--accent--rose-red); /* Sky Blue */
-  color: var(--backgroun-cream); /* Navy Blue text */
-}
-
-.button:hover {
-  background-color: var(--action-btn-icon-vorder); /* Gold on hover */
-  color: var(--white); /* White text */
-}
-
-  
   
   .hero {
     margin-top: 100px;
-    padding: 50px 0;
+    padding: 20px 0;
     margin-bottom: 100px;
   }
   .hero .container .text_hero{
     height: auto;
     text-align: start;
-    color: var(--accent--rose-red);
+    color: var(--black);
   }
   .hero .container .btn{
     font-size: 2rem;
-    background-color: var(--accent--rose-red); /* Sky Blue */
-    color: var(--backgroun-cream); /* Navy Blue text */
+    background-color: var(--primary-color); /* Sky Blue */
+   color: var(--bg); /* Navy Blue text */
   }
   .hero .container .btn:hover{
-    background-color: var(--action-btn-icon-vorder); /* Gold on hover */
-   color: var(--white); /* White text */
+    background-color: var(--primary-color); /* Gold on hover */
+   color: var(--bg); /* White text */
   }
   .hero .container .social-icons i{
     font-size: 1.7rem;
-    color: var(--accent--rose-red);
+    color: var(--accent-color);
   }
   .hero h1 {
     font-size: 3rem;
-    color: var(--accent--rose-red);
+    color: black;
+    font-family: var(--font-primary);
   }
   
   .hero .highlight {
-    color: var(--backgroun-cream);
+    color: var(--primary-color);
   }
-  
+  .hero h4{
+    color: black;
+  }
   .hero p {
     font-size: 1.2rem;
-    color: var(--secondary-text-bg);
+    color: #333;
   }
   
   .hero img {
@@ -100,31 +94,35 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--secondary-text-bg);
-    border: 1px solid var(--white);
+    border: 1px solid var(--black);
     width: 100%;
     padding: 10px 10px 20px 50px;
-    border-radius: 10%;
+    border-radius: 1px;
     
   }
   .about .text_about{
    display:flex ;
    flex-direction: column;
-   color: var(--accent--rose-red);
+   color: var(--primary-color);
 
   }
   .about .text_about .btn{
     width: fit-content;
     font: 2em sans-serif;
     align-self: center;
-    background-color: var(--accent--rose-red); /* Sky Blue */
-    color: var(--backgroun-cream); /* Navy Blue text */
+    color: var(--primary-color);
+    color: var(--bg); /* Navy Blue text */
   }
   .about h2 {
     font-size: 3.5rem;
+    color: black;
+  }
+  .about h1{
+    color: black;
   }
   .about p{
     font-size: 1.2rem;
+   color: #333;
   }
   
   .about .highlight {
@@ -142,8 +140,7 @@ h1, h2, h3 {
   }
   
   .btn:hover {
-    background-color: var(--action-btn-icon-vorder); /* Gold on hover */
-    color: var(--white); /* White text */
+    color: #333;
   }
   
   .services {
@@ -155,28 +152,33 @@ h1, h2, h3 {
   .services h2 {
     font-size: 2.5rem;
     margin-bottom: 100px;
+    color: var(--bg);
   }
   
   .services .service-box {
-    background-color: #0b0c2a;
+    background-color: var(--bg-color);
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
+    border: 1px solid var(--black);
     height: auto;
     justify-content: space-between;
     line-height: 1.7;
-    transition: 0.3s;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     
   }
 
   .services .service-box:hover {
         border: 1px solid --action-btn-icon-vorder;
         scale: 1.1;
+        cursor: pointer;
+        transform: translateY(-10px);
   }
   
   .service-box i {
     font-size: 3rem;
-    color: #2babe2;
+    color: var(--primary-color);
     margin: 50px;
   }
   #contact_id{
@@ -194,7 +196,7 @@ h1, h2, h3 {
   #projects h2 {
     font-size: 2.5em;
     margin-bottom: 50px;
-    color: #ffffff;
+    color: var(--black);
   }
   
   /* Grid Layout */
@@ -245,7 +247,7 @@ h1, h2, h3 {
   /* Button */
   .project-card .btn {
     background-color: var(--accent--rose-red); /* Sky Blue */
-    color: var(--backgroun-cream); /* Navy Blue text */
+    color: var(--primary-color); /* Navy Blue text */
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
@@ -289,9 +291,9 @@ h1, h2, h3 {
   }
   
   .contact input, .contact textarea {
-    background-color: #16172d;
+    background-color: var(--text2);
     border: none;
-    color: white;
+    color: var(--black);
   }
   
   .contact .form-control {
@@ -300,14 +302,14 @@ h1, h2, h3 {
   }
   
   .btn-primary {
-    background-color: var(--accent--rose-red); /* Sky Blue */
+    background-color: var(--accent-color); /* Sky Blue */
     color: var(--backgroun-cream); /* Navy Blue text */
     border: none;
   }
   
   .btn-primary:hover {
-    background-color: var(--action-btn-icon-vorder); /* Gold on hover */
-    color: var(--white); /* White text */
+    background-color: var(--accent-color); /* Gold on hover */
+    color: var(--text2); /* White text */
   }
 
   /*footer*/
