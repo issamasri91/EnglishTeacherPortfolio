@@ -25,12 +25,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-^@po=@7@%hk&7mtm2o90cizi8t4nte=18$75+q2pmunh1$8%r&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['englishteacherportfolio-server.onrender.com']
+ALLOWED_HOSTS = []
 
 # Ensure CSRF settings are configured correctly
-CSRF_TRUSTED_ORIGINS = ['https://englishteacherportfolio-server.onrender.com']
+CSRF_TRUSTED_ORIGINS = []
 
 
 # Application definition
@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pages',
-    'contact',
+
 ]
 
 MIDDLEWARE = [

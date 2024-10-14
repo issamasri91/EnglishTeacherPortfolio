@@ -1,42 +1,53 @@
 
 /* Custom Color Palette */
 :root {
-  --backgroun-cream: #fff3d9;
+  --backgroun-cream: #003366;
   --title-redOrange:#dc4731;
   --heaer-bruntOrange:#b8390e;
-  --accent--rose-red:#3b0918;
-  --blue-grotto: #0e86d4;
-  --blue: #055c9d;
-  --navy-blue: #003060;
+  --accent--rose-red:#87CEEB;
+  --action-btn-icon-vorder:#FFD700;
+  --secondary-text-bg:#708090;
+  --white:#FFFFFF	;
+ 
 }
+/* Body styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--backgroun-cream);
-    color: black;
-  }
-  
-  h1 {
-    color: var(--heaer-bruntOrange);
+  background-color: var(--white); /* White for background */
+  color: var(--secondary-text-bg); /* Slate Gray for text */
 }
-h4{
-  color: var(--title-redOrange);
+
+/* Navigation Bar */
+.navbar {
+  background-color: var(--backgroun-cream); /* Navy Blue */
+  padding: 15px;
 }
-span{
-  color: var(--accent--rose-red);
+
+.navbar a {
+  color: var(--white); /* White for links */
+  text-decoration: none;
+  padding: 10px 15px;
 }
-  nav .container-fluid{
-   
-   
-  }
-  
-  .navbar-brand {
-    color: white;
-    
-  }
-  
-  .nav-link {
-    color: white;
-  }
+
+.navbar a:hover {
+  color: var(--action-btn-icon-vorder); /* Gold on hover */
+}
+
+/* Headers */
+h1, h2, h3 {
+  color: var(--backgroun-cream); /* Navy Blue for headers */
+}
+
+/* Buttons */
+.button {
+  background-color: var(--accent--rose-red); /* Sky Blue */
+  color: var(--backgroun-cream); /* Navy Blue text */
+}
+
+.button:hover {
+  background-color: var(--action-btn-icon-vorder); /* Gold on hover */
+  color: var(--white); /* White text */
+}
+
   
   
   .hero {
@@ -47,28 +58,33 @@ span{
   .hero .container .text_hero{
     height: auto;
     text-align: start;
+    color: var(--accent--rose-red);
   }
   .hero .container .btn{
     font-size: 2rem;
-     background-color: var(--heaer-bruntOrange);
-    color: var(--backgroun-cream); /* Set text color to white for contrast */
+    background-color: var(--accent--rose-red); /* Sky Blue */
+    color: var(--backgroun-cream); /* Navy Blue text */
+  }
+  .hero .container .btn:hover{
+    background-color: var(--action-btn-icon-vorder); /* Gold on hover */
+   color: var(--white); /* White text */
   }
   .hero .container .social-icons i{
     font-size: 1.7rem;
-    color: var(--heaer-bruntOrange);
+    color: var(--accent--rose-red);
   }
   .hero h1 {
     font-size: 3rem;
-    color: var(--heaer-bruntOrange);
+    color: var(--accent--rose-red);
   }
   
   .hero .highlight {
-    color: var(--accent--rose-red);
+    color: var(--backgroun-cream);
   }
   
   .hero p {
     font-size: 1.2rem;
-    color: black;
+    color: var(--secondary-text-bg);
   }
   
   .hero img {
@@ -84,21 +100,25 @@ span{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--backgroun-cream);
-    border: 1px solid var(--accent--rose-red);
+    background-color: var(--secondary-text-bg);
+    border: 1px solid var(--white);
     width: 100%;
     padding: 10px 10px 20px 50px;
+    border-radius: 10%;
     
   }
   .about .text_about{
    display:flex ;
    flex-direction: column;
+   color: var(--accent--rose-red);
 
   }
   .about .text_about .btn{
     width: fit-content;
     font: 2em sans-serif;
     align-self: center;
+    background-color: var(--accent--rose-red); /* Sky Blue */
+    color: var(--backgroun-cream); /* Navy Blue text */
   }
   .about h2 {
     font-size: 3.5rem;
@@ -122,7 +142,8 @@ span{
   }
   
   .btn:hover {
-    background-color: #20b358;
+    background-color: var(--action-btn-icon-vorder); /* Gold on hover */
+    color: var(--white); /* White text */
   }
   
   .services {
@@ -149,7 +170,7 @@ span{
   }
 
   .services .service-box:hover {
-        border: 1px solid #2babe2;
+        border: 1px solid --action-btn-icon-vorder;
         scale: 1.1;
   }
   
@@ -223,8 +244,8 @@ span{
   
   /* Button */
   .project-card .btn {
-    background-color: #3498db;
-    color: #fff;
+    background-color: var(--accent--rose-red); /* Sky Blue */
+    color: var(--backgroun-cream); /* Navy Blue text */
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
@@ -279,12 +300,14 @@ span{
   }
   
   .btn-primary {
-    background-color: #2babe2;
+    background-color: var(--accent--rose-red); /* Sky Blue */
+    color: var(--backgroun-cream); /* Navy Blue text */
     border: none;
   }
   
   .btn-primary:hover {
-    background-color: #2191c3;
+    background-color: var(--action-btn-icon-vorder); /* Gold on hover */
+    color: var(--white); /* White text */
   }
 
   /*footer*/
