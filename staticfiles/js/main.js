@@ -8,7 +8,8 @@ var message = "Hello! I would like to get in touch with you."; // Optional pre-f
 
 // Get the button
 
-
+//
+//
 // When the user clicks the button, open WhatsApp with the pre-filled message
  function openWhatsap(){
   // Construct the WhatsApp URL
