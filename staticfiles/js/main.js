@@ -18,7 +18,7 @@ var message = "Hello! I would like to get in touch with you."; // Optional pre-f
   window.open(whatsappURL, '_blank');
 }
 
-
+//
 
 
 //***this script send me the email from contact me* */
